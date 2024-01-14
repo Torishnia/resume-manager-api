@@ -1,13 +1,13 @@
 # RESUME-API
 *You can start RESUME-API project on your local machine or use RESUME-API on vercel.*
 
-### 1. Init RESUME-API project on local machine. (Skip if you use online)
+### 1. Init RESUME-API project on local machine. (Skip if you want to use online)
 1. Run *git clone* https://github.com/Torishnia/resume-manager-api.git in terminal
 2. Run *"cd ./resume-manager-api"* in terminal
 3. Run *"npm install"* in terminal
 4. Run *"npm run dev"* in terminal
 
-### 2. Init RESUME-API project on vercel. (Skip if you use local)
+### 2. Init RESUME-API project on vercel. (Skip if you want to use local)
 1. Open [postman](https://www.postman.com/) application.
 2. Copy vercel [enpoint](https://resume-manager-api-git-main-torishnia.vercel.app)
 3. Use endpoint in Postman.
