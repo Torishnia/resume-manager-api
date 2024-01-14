@@ -1,0 +1,4 @@
+export enum E_INSTITUTION_DEGREE {
+  BACHELOR = "BACHELOR",
+  MASTER = "MASTER",
+}
