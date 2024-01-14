@@ -44,14 +44,20 @@ const payload = {
     "email": "valeri.torishnya@gmail.com",
     "linkedInURL": "linkedin.com/in/torishnia",
     "telegramURL": "t.me/valeritor",
-    "gitHubURL": "github.com/Torishnia",
+    "gitHubURL": "github.com/Torishnia"
   },
   "languages": [
-    { "id": null, "name": "English", "level": "MIDDLE" }
+    {
+      "id": null,
+      "name": "English",
+      "level": "MIDDLE"
+    }
   ],
   "skills": [
-    { "id": null, "name": "Skill 1" },
-    { "id": null, "name": "Skill 2" }
+    {
+      "id": null,
+      "name": "Skill 1"
+    }
   ],
   "experiences": [
     {
@@ -61,7 +67,7 @@ const payload = {
       "companyStack": "Company Stack",
       "companyDescription": "Company Description",
       "startDate": "2020-01-01 00:00:00.000",
-      "endDate": "2024-01-01 00:00:00.000",
+      "endDate": "2024-01-01 00:00:00.000"
     }
   ],
   "educations": [
@@ -71,7 +77,7 @@ const payload = {
       "institutionDegree": "BACHELOR",
       "institutionFaculty": "Institution Faculty",
       "startDate": "2015-01-01 00:00:00.000",
-      "endDate": "2020-01-01 00:00:00.000",
+      "endDate": "2020-01-01 00:00:00.000"
     }
   ],
   "courses": [
@@ -80,7 +86,7 @@ const payload = {
       "courseName": "Course Name",
       "courseAuthor": "Course Author",
       "courseResourse": "Course Resourse",
-      "courseDate": "2024-01-01 00:00:00.000",
+      "courseDate": "2024-01-01 00:00:00.000"
     }
   ]
 }

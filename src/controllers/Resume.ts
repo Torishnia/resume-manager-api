@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
 import { myDataSource } from '../utils/db';
-import { resumePayload } from '../payload';
+import { ICreateResumePayload, resumePayload } from '../payload';
 import { Resume } from '../entity/resume/Resume';
 import { createContact, updateContact } from './Contact';
 import { createLanguage } from './Language';
@@ -65,7 +65,7 @@ export async function createResume(req: Request, res: Response, next: NextFuncti
       experiences,
       educations,
       courses,
-    } = resumePayload;
+    } = req.body as ICreateResumePayload;
 
     const resumeRepository = myDataSource
       .getRepository(Resume)
@@ -117,7 +117,7 @@ export async function updateResume(req: Request, res: Response, next: NextFuncti
       experiences,
       educations,
       courses,
-    } = resumePayload;
+    } = req.body as ICreateResumePayload;
 
     const resumeRepository = myDataSource.getRepository(Resume);
     const existingResume = await resumeRepository.findOne({ where: { id: +id } });
