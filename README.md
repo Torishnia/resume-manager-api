@@ -1,10 +1,18 @@
-# RESUME-API
+# RESUME-API (Database was created in AWS (RDS))
 *You can start RESUME-API project on your local machine or use RESUME-API on vercel.*
 
 ### 1. Init RESUME-API project on local machine. (Skip if you want to use online)
 1. Run *git clone* https://github.com/Torishnia/resume-manager-api.git in terminal
 2. Run *"cd ./resume-manager-api"* in terminal
 3. Run *"npm install"* in terminal
+4. Create .env file in **./resume-manager-api** folder
+5. Set variables in .env file: 
+  ```
+    DB_HOST=database-1.cf4ne2avpsjk.eu-north-1.rds.amazonaws.com
+    DB_USERNAME=pizzaland
+    DB_PASSWORD=13241324
+    DB_DATABASE=pizzaland
+  ```
 4. Run *"npm run dev"* in terminal
 
 ### 2. Init RESUME-API project on vercel. (Skip if you want to use local)
