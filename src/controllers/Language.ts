@@ -18,3 +18,8 @@ export async function createLanguage(language: ILanguage): Promise<void> {
     throw new Error('error with create language');
   }
 }
+
+export async function updateLanguage(language: ILanguage): Promise<void> {
+  const { name, level, resumeId } = language;
+  // TODO. Need create logic for update language.
+}

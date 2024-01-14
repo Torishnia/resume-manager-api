@@ -1,4 +1,7 @@
-export interface IContact {
+import { IExcludeTimestamps } from "../../interfaces";
+import { IResume } from "../resume/IResume";
+
+export interface IContact extends IExcludeTimestamps {
   id: number | null;
   phone: string | null;
   email: string | null;
@@ -6,4 +9,6 @@ export interface IContact {
   telegramURL: string | null;
   gitHubURL: string | null;
   resumeId: number;
+
+  resume?: IResume;
 }

@@ -22,3 +22,8 @@ export async function createExperience(experience: IExperience): Promise<void> {
     throw new Error('error with create experience');
   }
 }
+
+export async function updateExperience(experience: IExperience): Promise<void> {
+  const { companyName, companyPosition, companyDescription, companyStack, startDate, endDate, resumeId } = experience;
+  // TODO. Need create logic for update experience.
+}

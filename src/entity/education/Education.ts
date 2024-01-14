@@ -1,9 +1,12 @@
 import {
   BaseEntity,
   Column,
+  CreateDateColumn,
+  DeleteDateColumn,
   Entity,
   ManyToOne,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from "typeorm";
 
 import { IEducation } from "./IEducation";
@@ -30,6 +33,15 @@ export class Education extends BaseEntity implements IEducation {
 
   @Column({ default: () => "CURRENT_TIMESTAMP" })
   endDate: Date;
+
+  @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  createdAt: Date;
+
+  @UpdateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  updatedAt: Date;
+
+  @DeleteDateColumn({ type: "timestamp", nullable: true })
+  deletedAt: Date;
 
   @Column()
   resumeId: number;

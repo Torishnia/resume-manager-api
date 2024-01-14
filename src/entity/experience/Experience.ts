@@ -1,9 +1,12 @@
 import {
   BaseEntity,
   Column,
+  CreateDateColumn,
+  DeleteDateColumn,
   Entity,
   ManyToOne,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from "typeorm";
 
 import { IExperience } from "./IExperience";
@@ -32,6 +35,15 @@ export class Experience extends BaseEntity implements IExperience {
 
   @Column({ default: () => "CURRENT_TIMESTAMP" })
   endDate: Date;
+
+  @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  createdAt: Date;
+
+  @UpdateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  updatedAt: Date;
+
+  @DeleteDateColumn({ type: "timestamp", nullable: true })
+  deletedAt: Date;
 
   @Column()
   resumeId: number;

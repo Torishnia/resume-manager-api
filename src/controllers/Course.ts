@@ -20,3 +20,8 @@ export async function createCourse(course: ICourse): Promise<void> {
     throw new Error('error with create course');
   }
 }
+
+export async function updateCourse(course: ICourse): Promise<void> {
+  const { courseName, courseAuthor, courseResourse, courseDate, resumeId } = course;
+  // TODO. Need create logic for update course.
+}

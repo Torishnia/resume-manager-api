@@ -14,3 +14,8 @@ export async function createSkill(skill: ISkill): Promise<void> {
     throw new Error('error with create skill');
   }
 }
+
+export async function updateSkill(skill: ISkill): Promise<void> {
+  const { name, resumeId } = skill;
+  // TODO. Need create logic for update skill.
+}

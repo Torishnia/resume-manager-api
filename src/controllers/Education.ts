@@ -21,3 +21,8 @@ export async function createEducation(education: IEducation): Promise<void> {
     throw new Error('error with create education');
   }
 }
+
+export async function updateEducation(education: IEducation): Promise<void> {
+  const { institutionName, institutionDegree, institutionFaculty, startDate, endDate, resumeId } = education;
+  // TODO. Need create logic for update education.
+}

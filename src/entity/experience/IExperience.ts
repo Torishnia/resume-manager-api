@@ -1,6 +1,7 @@
+import { IExcludeTimestamps } from "../../interfaces";
 import { IResume } from "../resume/IResume";
 
-export interface IExperience {
+export interface IExperience extends IExcludeTimestamps {
   id: number | null;
   companyName: string;
   companyPosition: string | null;

@@ -1,10 +1,13 @@
 import {
   BaseEntity,
   Column,
+  CreateDateColumn,
+  DeleteDateColumn,
   Entity,
   JoinColumn,
   OneToOne,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from "typeorm";
 
 import { IContact } from "./IContact";
@@ -31,9 +34,19 @@ export class Contact extends BaseEntity implements IContact {
   @Column({ length: 128, nullable: true })
   gitHubURL: string;
 
+  @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  createdAt: Date;
+
+  @UpdateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
+  updatedAt: Date;
+
+  @DeleteDateColumn({ type: "timestamp", nullable: true })
+  deletedAt: Date;
+
   @Column({ nullable: false })
   resumeId: number;
 
-  @OneToOne(() => Resume, { "cascade": true, nullable: false })
+  @OneToOne(() => Resume, resume => resume.contact, { nullable: false })
+  @JoinColumn({ name: 'resumeId' })
   resume: IResume;
 }

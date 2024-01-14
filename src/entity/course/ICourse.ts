@@ -1,11 +1,12 @@
+import { IExcludeTimestamps } from "../../interfaces";
 import { IResume } from "../resume/IResume";
 
-export interface ICourse {
+export interface ICourse extends IExcludeTimestamps {
   id: number | null;
   courseName: string;
   courseAuthor: string | null;
   courseResourse: string | null;
-  courseDate: Date
+  courseDate: Date;
   resumeId: number;
 
   resume?: IResume;

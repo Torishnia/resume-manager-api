@@ -20,3 +20,8 @@ export async function createContact(contact: IContact): Promise<void> {
     throw new Error('error with create contact');
   }
 }
+
+export async function updateContact(contact: IContact): Promise<void> {
+  const { phone, email, linkedInURL, telegramURL, gitHubURL, resumeId } = contact;
+  // TODO. Need create logic for update contact.
+}

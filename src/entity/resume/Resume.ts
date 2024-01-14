@@ -59,7 +59,7 @@ export class Resume extends BaseEntity implements IResume {
   @DeleteDateColumn({ type: "timestamp", nullable: true })
   deletedAt: Date;
 
-  @OneToOne(() => Contact, { "cascade": true })
+  @OneToOne(() => Contact, contact => contact.resume, { "cascade": true })
   contact: IContact;
 
   @OneToMany(() => Language, language => language.resume)
