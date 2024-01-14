@@ -1,7 +1,7 @@
 import { IResume } from "../resume/IResume";
 
 export interface IEducation {
-  id: number;
+  id: number | null;
   institutionName: string;
   institutionDegree: string;
   institutionFaculty: string;

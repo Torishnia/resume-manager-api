@@ -1,11 +1,11 @@
 import { IResume } from "../resume/IResume";
 
 export interface IExperience {
-  id: number;
+  id: number | null;
   companyName: string;
-  companyPosition: string;
-  companyStack: string;
-  companyDescription: string;
+  companyPosition: string | null;
+  companyStack: string | null;
+  companyDescription: string | null;
   startDate: Date;
   endDate: Date;
   resumeId: number;

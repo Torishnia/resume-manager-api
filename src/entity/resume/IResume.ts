@@ -3,7 +3,7 @@ import { ILanguage } from "../language/ILanguage";
 import { ISkill } from "../skill/ISkill";
 
 export interface IResume {
-  id: number;
+  id: number | null;
   firstName: string;
   lastName: string;
   age: number;

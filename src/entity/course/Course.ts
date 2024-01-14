@@ -18,10 +18,10 @@ export class Course extends BaseEntity implements ICourse {
   @Column({ length: 128 })
   courseName: string;
   
-  @Column({ length: 128 })
-  courseStack: string;
+  @Column({ length: 128, nullable: true })
+  courseAuthor: string;
 
-  @Column({ length: 128 })
+  @Column({ length: 128, nullable: true })
   courseResourse: string;
 
   @Column({ default: () => "CURRENT_TIMESTAMP" })

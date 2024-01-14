@@ -1,10 +1,10 @@
 import { IResume } from "../resume/IResume";
 
 export interface ICourse {
-  id: number;
+  id: number | null;
   courseName: string;
-  courseStack: string;
-  courseResourse: string;
+  courseAuthor: string | null;
+  courseResourse: string | null;
   courseDate: Date
   resumeId: number;
 

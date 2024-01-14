@@ -1,8 +1,9 @@
 export interface IContact {
-  id: number;
-  phone: string;
-  email: string;
-  linkedInURL: string;
-  telegramURL: string;
-  gitHubURL: string;
+  id: number | null;
+  phone: string | null;
+  email: string | null;
+  linkedInURL: string | null;
+  telegramURL: string | null;
+  gitHubURL: string | null;
+  resumeId: number;
 }

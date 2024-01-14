@@ -18,13 +18,13 @@ export class Experience extends BaseEntity implements IExperience {
   @Column({ length: 64 })
   companyName: string;
 
-  @Column({ length: 128 })
+  @Column({ length: 128, nullable: true })
   companyPosition: string;
 
-  @Column({ length: 128 })
+  @Column({ length: 128, nullable: true })
   companyStack: string;
 
-  @Column({ length: 500 })
+  @Column({ length: 500, nullable: true })
   companyDescription: string;
 
   @Column({ default: () => "CURRENT_TIMESTAMP" })

@@ -44,10 +44,10 @@ export class Resume extends BaseEntity implements IResume {
   @Column({ length: 128 })
   positionTitle: string;
 
-  @Column({ length: 128 })
+  @Column({ length: 128, nullable: true })
   positionDescription: string;
 
-  @Column({ length: 500 })
+  @Column({ length: 500, nullable: true })
   interests: string;
 
   @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })

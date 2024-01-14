@@ -1,7 +1,7 @@
 import { IResume } from "../resume/IResume";
 
 export interface ISkill {
-  id: number;
+  id: number | null;
   name: string;
   resumeId: number;
  
