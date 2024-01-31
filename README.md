@@ -9,13 +9,7 @@
 2. Run *"cd ./resume-manager-api"* in terminal
 3. Run *"npm install"* in terminal
 4. Create .env file in **./resume-manager-api** folder
-5. Set variables in .env file: 
-  ```
-    DB_HOST=database-1.cf4ne2avpsjk.eu-north-1.rds.amazonaws.com
-    DB_USERNAME=pizzaland
-    DB_PASSWORD=13241324
-    DB_DATABASE=pizzaland
-  ```
+5. Set variables in .env file
 6. Run *"npm run dev"* in terminal
 ---
 ---
