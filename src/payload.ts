@@ -62,14 +62,16 @@ export const resumePayload: ICreateResumePayload = {
       courseName: "Front-End Developer Internship",
       courseAuthor: "JustThink AI",
       courseResourse: "https://www.justthink.ai/",
-      startDate: new Date("2023-01-01 14:19:46.822"),
+      startDate: new Date("2023-06-01 14:19:46.822"),
+      endDate: new Date("2023-08-01 14:19:46.822"),
     },
     {
       id: null,
       courseName: "React - The Complete Guide 2024 (incl. React Router & Redux)",
       courseAuthor: "Author: Maximilian Schwarzmuller",
       courseResourse: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
-      startDate: new Date("2023-06-01 14:19:46.822"),
+      startDate: new Date("2023-07-01 14:19:46.822"),
+      endDate: new Date("2021-09-01 14:19:46.822"),
     },
   ],
 }
@@ -136,4 +138,5 @@ export interface ICreateCoursePayload {
   courseAuthor: string | null;
   courseResourse: string | null;
   startDate: Date;
+  endDate: Date;
 }
