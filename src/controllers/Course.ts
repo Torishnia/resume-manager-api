@@ -3,7 +3,7 @@ import { ICourse } from '../entity/course/ICourse';
 import { Course } from '../entity/course/Course';
 
 export async function createCourse(course: ICourse): Promise<void> {
-  const { courseName, courseAuthor, courseResourse, courseDate, resumeId } = course;
+  const { courseName, courseAuthor, courseResourse, startDate, endDate, resumeId } = course;
 
   const courseRepository = myDataSource
     .getRepository(Course)
@@ -11,7 +11,8 @@ export async function createCourse(course: ICourse): Promise<void> {
       courseName,
       courseAuthor,
       courseResourse,
-      courseDate,
+      startDate,
+      endDate,
       resumeId,
     });
 
@@ -22,6 +23,6 @@ export async function createCourse(course: ICourse): Promise<void> {
 }
 
 export async function updateCourse(course: ICourse): Promise<void> {
-  const { courseName, courseAuthor, courseResourse, courseDate, resumeId } = course;
+  const { courseName, courseAuthor, courseResourse, startDate, endDate, resumeId } = course;
   // TODO. Need create logic for update course.
 }

@@ -95,7 +95,8 @@ const payload = {
       "courseName": "Course Name",
       "courseAuthor": "Course Author",
       "courseResourse": "Course Resourse",
-      "courseDate": "2024-01-01 00:00:00.000"
+      "startDate": "2024-01-01 00:00:00.000"
+      "endDate": "2020-01-01 00:00:00.000"
     }
   ]
 }
