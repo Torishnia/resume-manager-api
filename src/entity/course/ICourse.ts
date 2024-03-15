@@ -6,7 +6,8 @@ export interface ICourse extends IExcludeTimestamps {
   courseName: string;
   courseAuthor: string | null;
   courseResourse: string | null;
-  courseDate: Date;
+  startDate: Date;
+  endDate: Date;
   resumeId: number;
 
   resume?: IResume;

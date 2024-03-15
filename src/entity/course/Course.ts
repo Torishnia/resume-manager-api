@@ -28,7 +28,10 @@ export class Course extends BaseEntity implements ICourse {
   courseResourse: string;
 
   @Column({ default: () => "CURRENT_TIMESTAMP" })
-  courseDate: Date;
+  startDate: Date;
+
+  @Column({ default: () => "CURRENT_TIMESTAMP" })
+  endDate: Date;
 
   @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP" })
   createdAt: Date;
